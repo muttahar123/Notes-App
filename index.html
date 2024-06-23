@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- custom css link -->
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="login_container">
+        <div class="container">
+          <div class="screen">
+            <div class="screen__content">
+              <form class="login">
+                <div class="login__field">
+                  <i class="login__icon fas fa-user"></i>
+                  <input
+                  id="email"
+                    type="text"
+                    class="login__input"
+                    placeholder="User name / Email"
+                  />
+                </div>
+                <div class="login__field">
+                  <i class="login__icon fas fa-lock"></i>
+                  <input
+                    id="password"
+                    type="password"
+                    class="login__input"
+                    placeholder="Password"
+                  />
+                </div>
+                <button onclick="loginUser()" class="button login__submit">
+                  <span class="button__text">Log In Now</span>
+                  <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+              </form>
+              <div class="social-login">
+                <h3>log in via</h3>
+                <div class="social-icons">
+                  <a href="#" class="social-login__icon fab fa-instagram"></a>
+                  <a href="#" class="social-login__icon fab fa-facebook"></a>
+                  <a href="#" class="social-login__icon fab fa-twitter"></a>
+                </div>
+              </div>
+            </div>
+            <div class="screen__background">
+              <span
+                class="screen__background__shape screen__background__shape4"
+              ></span>
+              <span
+                class="screen__background__shape screen__background__shape3"
+              ></span>
+              <span
+                class="screen__background__shape screen__background__shape2"
+              ></span>
+              <span
+                class="screen__background__shape screen__background__shape1"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="home_container" class="home_container">
+          <nav>
+              
+            <span id="user_email"><a href="#" ></a></span>
+                  <span class="btn_log"><button class="logout-btn" onclick="signOut()">Log Out</button></span>
+                  <!-- <button onclick="logOut()">Logout</button> -->
+              
+            </nav>
+          <h1>Welcome To Home Page</h1>
+      </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
